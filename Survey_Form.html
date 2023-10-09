@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.tutorialjinni.com/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="Survey_Form.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="survey-form">
+            <form id="survey-form">
+
+                <div class="heading">
+                    <h1>Survey Form</h1>
+                </div>
+
+                <div class="main">
+                    <div class="left-section">
+                        <label for="firstname">First Name: </label>
+                        <input type="text" placeholder="First Name.." id="first_name" required>
+
+                        <label for="dateofbirth">Date Of Birth: </label>
+                        <input type="date" id="date" required>
+
+                        <label for="country">Country: </label>
+                        <select id="country" required>
+                            <option value="">select</option>
+                        </select>
+
+                        <label for="profession">Profession: </label>
+                        <input type="text" id="profession" placeholder="Profession.." required>
+
+                    </div>
+
+                    <div class="right-section">
+
+                        <label for="lastname">Last Name: </label>
+                        <input type="text" id="last_name" placeholder="Last Name.." required>
+
+                        <label for="email">Email : </label>
+                        <input type="email" id="email" placeholder="Email.." required>
+
+                        <label for="mobile">Mobile No: </label>
+                        <input type="text" id="phnumber" placeholder="Phone Number.." minlength="10" maxlength="10" required>
+
+                        <label for="gender">Gender:</label>
+                        <div class="gender-info">
+                            <div class="common">
+                                <input type="checkbox" id="male">
+                                <label for="male">Male</label>
+                            </div>
+
+                            <div class="common">
+                                <input type="checkbox" id="female">
+                                <label for="female">Female</label>
+                            </div>
+
+                            <div class="common">
+                                <input type="checkbox" id="others">
+                                <label for="Others">Others</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-section">
+                    <button type="submit" id="submit">Submit</button>
+                    <button type="reset" id="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <p>Created By <span>Nilesh Oulkar</span></p>
+        </footer>
+
+    </div>
+    
+    
+
+    <div class="popup">
+        <form>
+            <div class="heading">
+                <h1>Filled Form Data</h1>
+                <button id="close">Close</button>
+            </div>
+            <div class="form-data">
+
+            </div>
+        </form>
+    </div>
+    <script src="popup.js">
+    </script>
+    <script src="countries.js"></script>
+
+</body>
+
+</html>

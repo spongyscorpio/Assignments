@@ -1,0 +1,119 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container footer{
+    position: absolute;
+    top: 85%;
+    /* margin-top: 50px; */
+    width: 100%;
+    height: 10%;
+    border: 2px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+span{
+    font-style: italic;
+    font-size: 2.5vw;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.container footer p{
+    font-size: 2vw;
+}
+
+
+.container .calculator{
+    height: 400px;
+    width: 360px;
+    background-color: aqua;
+}
+
+form{
+    height: 100%;
+    width: 100%;
+}
+
+.container .calculator .input-display {
+    height: 20%;
+    width: 100%;
+    
+    display: flex;
+}
+
+.container .calculator .input-display .input{
+    height: 100%;
+    width: 75%;
+    
+}
+
+.container .calculator .input-display .input input{
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.container .calculator .input-display .clear{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+}
+
+.container .calculator .input-display .clear input{
+    height: 70px;
+    width: 70px;
+    font-size: 20px; 
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.container .calculator .number-area{
+    height: 80%;
+    width: 100%;
+  
+}
+
+
+
+.container .calculator .number-area .numbers{
+    height: auto;
+    width: 100%;
+    padding: 5px 0;
+
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.container .calculator .number-area .numbers input{
+    height: 70px;
+    width: 70px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+} 
+

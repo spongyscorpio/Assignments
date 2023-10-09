@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+
+}
+
+.container .survey-form {
+    height: auto;
+    width: 50vw;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: mediumaquamarine;
+}
+
+.container .survey-form form {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.container .survey-form form .heading h1 {
+    font-size: 2.5vw;
+    text-align: center;
+    padding: 10px 0 5px 0;
+}
+
+.container .survey-form form .main {
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+label {
+    margin: 20px 0 5px 30px;
+    font-size: 1.5vw;
+    position: relative;
+}
+
+
+.survey-form .main input,
+select {
+    width: 85%;
+    padding: 10px;
+    font-size: 1.5vw;
+    margin: 0 auto;
+}
+
+.container .survey-form form .main .left-section,
+.right-section {
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+
+.container .survey-form form .right-section .checkbox-info {
+    width: auto;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gender-info {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.gender-info label {
+    font-size: 1.2vw;
+    margin: 0;
+    padding: 0;
+}
+
+.gender-info .common {
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.gender-info .common input {
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.btn-section {
+    height: auto;
+    width: 90%;
+    display: flex;
+    padding: 15px 0;
+    margin: 0 auto;
+    /* border: 1px black solid; */
+}
+
+.btn-section button {
+    width: 20%;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2vw;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.container footer{
+    position: absolute;
+    top: 90%;
+    left: 75%;
+    /* margin-top: 50px; */
+    width: 25%;
+    height: 10%;
+    /* border: 2px black solid; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+
+span{
+    font-style: italic;
+    font-size: 2vw;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.container footer p{
+    font-size: 1.5vw;
+}
+
+
+
+/* popup area */
+.popup {
+    display: none;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.5vw;
+    height: 70vh;
+    width: 30%;
+}
+
+.popup form .heading {
+    height: 10%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px black solid; */
+    display: flex;
+}
+
+.popup form .heading button {
+    padding: 5px 10px;
+    font-size: 1.5vw;
+}
+
+.popup form .heading h1 {
+    font-size: 2vw;
+}
+
+
+.popup .main-section {
+    height: auto;
+    width: 100%;
+    /* display: flex; */
+
+}
+
+.main-section label {
+    width: 25%;
+}
+
+.main-section input {
+    width: 40%;
+    height: 30px;
+    padding: 0 5px;
+    font-size: 1vw;
+}

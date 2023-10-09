@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <form action="">
+                <div class="input-display">
+                    <div class="input">
+                        <input type="text" name="userInput">
+                    </div>
+                    <div class="clear">
+                        <input type="button" value="AC" onclick="userInput.value = ''">
+                    </div>
+                </div>
+                <div class="number-area">
+                    <div class="numbers">
+                        <input type="button" value="7" onclick="userInput.value +='7'">
+                        <input type="button" value="8" onclick="userInput.value +='8'">
+                        <input type="button" value="9" onclick="userInput.value +='9'">
+                        <input type="button" value="+" onclick="userInput.value +='+'">
+                    </div>
+    
+                    <div class="numbers">
+                        <input type="button" value="4" onclick="userInput.value +='4'">
+                        <input type="button" value="5" onclick="userInput.value +='5'">
+                        <input type="button" value="6" onclick="userInput.value +='6'">
+                        <input type="button" value="-" onclick="userInput.value +='-'">
+                    </div>
+    
+                    <div class="numbers">
+                        <input type="button" value="1" onclick="userInput.value +='1'">
+                        <input type="button" value="2" onclick="userInput.value +='2'">
+                        <input type="button" value="3" onclick="userInput.value +='3'">
+                        <input type="button" value="/" onclick="userInput.value +='/'">
+                    </div>
+    
+                    <div class="numbers">
+                        <input type="button" value="." onclick="userInput.value +='.'">
+                        <input type="button" value="0" onclick="userInput.value +='0'">
+                        <input type="button" value="=" onclick="userInput.value = eval(userInput.value)">
+                        <input type="button" value="*" onclick="userInput.value +='*'">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <p>created by <span>Nilesh Oulkar</span></p>
+        </footer>
+    </div>
+    
+</body>
+</html>
